@@ -1,0 +1,21 @@
+** start of styles.css **
+
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #f9f9f9;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label, input, select, textarea, button {
+  margin: 0.5rem 0;
+}
+
+
+** end of styles.css **
