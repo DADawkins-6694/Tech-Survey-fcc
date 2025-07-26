@@ -1,0 +1,59 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1 id="title">Tech Interest Survey</h1>
+  <p id="description">We value your feedback! Please complete this form to help us understand your interests better.</p>
+
+  <form id="survey-form">
+    <!-- Name -->
+    <label id="name-label" for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+
+    <!-- Email -->
+    <label id="email-label" for="email">Email Address:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+    <!-- Age -->
+    <label id="number-label" for="number">Age (18–99):</label>
+    <input type="number" id="number" name="age" min="18" max="99" placeholder="Enter your age" required />
+
+    <!-- Dropdown -->
+    <label for="dropdown">Which area interests you most?</label>
+    <select id="dropdown" name="interest">
+      <option value="">-- Select One --</option>
+      <option value="cybersecurity">Cybersecurity</option>
+      <option value="networking">Networking</option>
+    </select>
+
+    <!-- Radio Buttons -->
+    <p>Preferred learning method:</p>
+    <label><input type="radio" name="learning" value="online" /> Online</label>
+    <label><input type="radio" name="learning" value="in-person" /> In-person</label>
+
+    <!-- Checkboxes -->
+    <p>What certifications are you interested in? (Select all that apply)</p>
+    <label><input type="checkbox" name="certs" value="a+" /> CompTIA A+</label>
+    <label><input type="checkbox" name="certs" value="network+" /> CompTIA Network+</label>
+    <label><input type="checkbox" name="certs" value="security+" /> CompTIA Security+</label>
+
+    <!-- Textarea -->
+    <p>Additional comments:</p>
+    <textarea name="comments" rows="4" cols="40" placeholder="Enter any comments or questions here..."></textarea>
+
+    <!-- Submit -->
+    <button type="submit" id="submit">Submit</button>
+  </form>
+
+</body>
+</html>
+
+** end of index.html **
